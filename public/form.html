@@ -31,7 +31,7 @@
             xhr.send(data);
             xhr.addEventListener('load', function(){
                 var result = JSON.parse(xhr.responseText);
-                document.querySelector(".result").innerHTML = result.email;
+                document.querySelector(".result").innerHTML = result.name;
                 console.log(xhr.responseText);
             });
         }
